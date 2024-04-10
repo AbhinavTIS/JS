@@ -23,7 +23,7 @@ const submitBtn = document.getElementById('submit');
 const validate = (e) => {
   e.preventDefault();
  
-  if (name.value.length < 3) {
+  if (name.value.length < 2) {
     errorElement.innerHTML = 'Your name should be at least 3 characters long.';
     return false;
   } 
