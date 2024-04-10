@@ -264,4 +264,13 @@
     border-radius: 50%;
   }
   
+  input::placeholder, textarea::placeholder {
+    color: var(--primary-color); /* Adjust this color as needed */
+    opacity: 1; /* This ensures the placeholder has full opacity */
   }
+  
+  [data-theme="dark"] input::placeholder,
+  [data-theme="dark"] textarea::placeholder {
+    color: var(--primary-color); /* Ensure appropriate color contrast in dark mode */
+  }
+  
